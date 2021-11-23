@@ -1,8 +1,7 @@
-package com.techproed.day04;
+package com.api.practice01;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.junit.Assert;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;

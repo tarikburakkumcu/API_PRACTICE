@@ -1,4 +1,4 @@
-package com.techproed.day05;
+package com.api.practice02;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;

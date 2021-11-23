@@ -1,4 +1,4 @@
-package com.techproed.day06;
+package com.api.practice03;
 
 public class GeyRequest08 {
 }

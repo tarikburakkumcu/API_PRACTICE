@@ -1,4 +1,4 @@
-package com.techproed.day04;
+package com.api.practice01;
 
 import io.restassured.response.Response;
 import org.junit.Assert;

@@ -1,6 +1,6 @@
-package com.techproed.day05;
+package com.api.practice02;
 
-import com.techproed.testBase.JsonPlaceHolderTestBase;
+import com.api.testBase.JsonPlaceHolderTestBase;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import static org.hamcrest.Matchers.*;
