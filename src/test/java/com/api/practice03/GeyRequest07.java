@@ -49,6 +49,9 @@ public class GeyRequest07 extends HerokuAppTestBase {
                 statusCode(200).
                 contentType(ContentType.JSON);
 
+        Assert.assertEquals(200,response.getStatusCode());
+        Assert.assertEquals("application/json",response.contentType());
+
         Assert.assertEquals("Susan",jsonPath.getString("firstname"));
         Assert.assertEquals("Brown", jsonPath.getString("lastname"));
         Assert.assertEquals(178,jsonPath.getInt("totalprice"));
