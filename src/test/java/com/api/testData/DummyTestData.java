@@ -1,4 +1,4 @@
-package com.api.TestData;
+package com.api.testData;
 
 import org.json.JSONObject;
 

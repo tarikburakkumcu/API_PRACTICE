@@ -1,6 +1,6 @@
 package com.api.practice05;
 
-import com.api.TestData.HerokuappTestData;
+import com.api.testData.HerokuappTestData;
 import com.api.testBase.HerokuAppTestBase;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
