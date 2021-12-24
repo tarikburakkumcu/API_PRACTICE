@@ -4,6 +4,7 @@ import com.api.TestData.JsonPlaceHolderTestData;
 import com.api.testBase.JsonPlaceHolderTestBase;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import org.codehaus.jackson.annotate.JsonTypeInfo;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -22,7 +23,7 @@ public class GetRequest11TestData extends JsonPlaceHolderTestBase {
 
         JsonPlaceHolderTestData expectedObject=new JsonPlaceHolderTestData();
         HashMap<String,Object> expectedData= (HashMap<String, Object>) expectedObject.setUpTestData();
-        
+
         System.out.println(expectedData);
         System.out.println("");
         Response response= given().
@@ -55,8 +56,12 @@ public class GetRequest11TestData extends JsonPlaceHolderTestBase {
         // - object mapper
         // - pojo class
 
+        HashMap<String,Object> actualData= response.as(HashMap.class);
+        System.out.println(actualData);
 
-
+        Assert.assertEquals(expectedData.get("userId"),actualData.get("userId"));
+        Assert.assertEquals(expectedData.get("title"),actualData.get("title"));
+        Assert.assertEquals(expectedData.get("completed"),actualData.get("completed"));
 
     }
 
