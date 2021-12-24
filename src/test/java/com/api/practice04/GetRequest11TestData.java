@@ -1,10 +1,9 @@
 package com.api.practice04;
 
-import com.api.TestData.JsonPlaceHolderTestData;
+import com.api.testData.JsonPlaceHolderTestData;
 import com.api.testBase.JsonPlaceHolderTestBase;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.codehaus.jackson.annotate.JsonTypeInfo;
 import org.junit.Assert;
 import org.junit.Test;
 
