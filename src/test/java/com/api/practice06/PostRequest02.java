@@ -82,5 +82,4 @@ olduğunu test edin
         Assert.assertEquals(expectedRequestData.getJSONObject("bookingdates").getString("checkin"), json.getString("booking.bookingdates.checkin"));
         Assert.assertEquals(expectedRequestData.getJSONObject("bookingdates").getString("checkout"), json.getString("booking.bookingdates.checkout"));
     }
-
 }
