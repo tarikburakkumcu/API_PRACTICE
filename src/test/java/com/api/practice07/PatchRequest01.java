@@ -39,7 +39,6 @@ Dönen response un status kodunun 200 ve body kısmının aşağıdaki gibi oldu
         JsonPlaceHolderTestData testData = new JsonPlaceHolderTestData();
         JSONObject requestData = testData.setUpPatchRequestData();
         System.out.println(requestData);
-
         JSONObject expectedData = testData.setUpPatchExpectedData();
         System.out.println(expectedData);
 
